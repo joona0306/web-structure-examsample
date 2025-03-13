@@ -1,0 +1,286 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+html,
+body {
+ font-size: 16px;
+ color: #333;
+ background-color: #fff;
+}
+ul,
+ol {
+ list-style: none;
+}
+a {
+ display: block;
+ text-decoration: none;
+ color: #333;
+}
+img {
+ border: 0;
+ vertical-align: middle;
+}
+
+.wrap {
+ width: 100vw;
+ height: 100vh;
+ background-color: antiquewhite;
+}
+.body-wrap {
+ position: relative;
+ width: 100%;
+ height: calc(100vh - 100px);
+ display: flex;
+ /* justify-content: space-between; */
+}
+
+.header {
+ position: relative;
+ width: 200px;
+ height: 100%;
+ background-color: yellowgreen;
+}
+.logo {
+ position: relative;
+ width: 100%;
+ height: 120px;
+}
+.logo img {
+}
+.logo span {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ display: block;
+ width: 190px;
+ line-height: 45px;
+ text-align: center;
+ background-color: #ffd900;
+ font-weight: bold;
+ font-size: 24px;
+ color: #fff;
+ text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.logo:hover {
+ opacity: 0.5;
+}
+
+.menu {
+ position: relative;
+ width: 100%;
+ height: calc(100% - 120px);
+ background-color: #eee;
+ padding-top: 20px;
+}
+.navi {
+ position: relative;
+ width: 180px;
+ margin: 0 auto;
+}
+.navi > li {
+}
+.navi > li > a {
+ width: 180px;
+ line-height: 40px;
+ background-color: #ddd;
+ font-size: 20px;
+}
+.navi > li:hover > a {
+ font-weight: bold;
+ background-color: #ffd900;
+}
+.submenu {
+ position: relative;
+ width: 100%;
+ height: 0;
+ overflow: hidden;
+}
+.submenu li {
+}
+.submenu li a {
+ width: 100%;
+ line-height: 40px;
+ padding-left: 10px;
+}
+.submenu li a:hover {
+ font-weight: bold;
+ background-color: #ffed87;
+}
+
+.contents {
+ position: relative;
+ width: 400px;
+ height: 100%;
+ background-color: thistle;
+ padding: 40px 10px 0px 10px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ gap: 20px;
+}
+.notice {
+ /* margin-bottom: 40px; */
+ flex: 3;
+}
+.notice > a {
+ width: 150px;
+ line-height: 40px;
+ text-align: center;
+ font-weight: bold;
+ font-size: 20px;
+ background-color: #ffed87;
+ margin-bottom: 20px;
+}
+.notice ul {
+}
+.notice ul li {
+}
+.notice ul li a {
+ width: 100%;
+ line-height: 40px;
+ display: flex;
+ justify-content: space-between;
+}
+.notice ul li:nth-child(odd) a {
+ background-color: #ffed87;
+}
+.notice ul li a span {
+}
+
+.gallery {
+ flex: 3;
+}
+.gallery > a {
+ width: 150px;
+ line-height: 40px;
+ text-align: center;
+ font-weight: bold;
+ font-size: 20px;
+ background-color: #ffed87;
+ margin-bottom: 20px;
+}
+.gallery ul {
+ display: flex;
+ justify-content: space-between;
+}
+.gallery ul li {
+}
+.gallery ul li a {
+}
+.gallery ul li a img {
+}
+
+.shorcut {
+ position: relative;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ flex: 1;
+}
+.shorcut a i {
+ font-size: 50px;
+}
+
+.img-slide {
+ position: relative;
+ width: calc(100% - 600px);
+ height: 100%;
+ background-color: violet;
+ overflow: hidden;
+}
+.img-slide ul {
+ position: relative;
+ width: 100%;
+ height: 300%;
+}
+.img-slide ul li {
+}
+.img-slide ul li a {
+}
+.img-slide ul li a img {
+ width: calc(100vw - 600px);
+ height: calc(100vh - 100px);
+ object-fit: cover;
+}
+
+.footer {
+ position: relative;
+ width: 100%;
+ height: 100px;
+ background-color: aquamarine;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.footer .logo {
+ width: 200px;
+ height: 100px;
+ filter: grayscale();
+}
+.footer .logo img {
+ width: 200px;
+ height: 100px;
+ object-fit: cover;
+}
+
+.copy {
+ position: relative;
+ width: 80%;
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 0 20px;
+}
+.family-site {
+ position: relative;
+ width: 20%;
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.family-site select {
+ width: 120px;
+ height: 30px;
+}
+
+#modal {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100vw;
+ height: 100vh;
+ background-color: rgba(0, 0, 0, 0.7);
+ display: none;
+ z-index: 1;
+}
+#modal.active {
+ display: block;
+}
+.modal-inner {
+ position: fixed;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ width: 400px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 20px;
+ padding: 20px;
+ background-color: #f5f5f5;
+}
+.modal-title {
+}
+.modal-body {
+}
+.modal-btn {
+ cursor: pointer;
+}
+.modal-btn:hover {
+ font-weight: bold;
+}

@@ -1,0 +1,99 @@
+.tabmenu {
+}
+.tabmenu.inner {
+ position: relative;
+ height: 400px;
+ background-color: var(--grayscale);
+ border-radius: 30px;
+ box-shadow: 0 4px 10px var(--g400);
+ margin-bottom: 20px;
+ align-items: center;
+ padding: 40px;
+}
+
+.tabmenu > ul {
+ position: relative;
+ width: 100%;
+ height: 100%;
+}
+.tabmenu > ul > li {
+ position: absolute;
+}
+.tabmenu > ul > li > a {
+ position: absolute;
+ left: 30px;
+ width: 150px;
+ line-height: 40px;
+ text-align: center;
+ font-size: 20px;
+ border-radius: 15px 15px 0 0;
+ background-color: var(--g100);
+}
+.tabmenu > ul > li:last-child > a {
+ left: 180px;
+}
+
+.tabmenu > ul > li > div {
+ position: absolute;
+ top: 40px;
+ width: 800px;
+ border-radius: 15px;
+ overflow: hidden;
+ background-color: var(--g100);
+ display: none;
+}
+.tabmenu > ul > li:hover > a {
+ background-color: var(--s300);
+ font-weight: bold;
+}
+.tabmenu > ul > li.active > a {
+ background-color: var(--p600);
+ color: var(--g900);
+ font-weight: bold;
+}
+.tabmenu > ul > li.active > div {
+ display: block;
+ background-color: var(--p600);
+}
+
+.notice {
+}
+.notice ul {
+ position: relative;
+ width: 100%;
+ padding: 15px;
+}
+.notice ul li {
+}
+.notice ul li a {
+ width: 100%;
+ line-height: 60px;
+ border-bottom: 1px solid #666;
+}
+.notice ul li a span {
+}
+.notice ul li a:hover {
+ background-color: var(--s300);
+ color: #000;
+}
+
+.gallery {
+}
+.gallery ul {
+ position: relative;
+ display: flex;
+ width: 100%;
+ justify-content: center;
+ align-items: center;
+ gap: 40px;
+ padding: 40px 0;
+}
+.gallery ul li {
+}
+.gallery ul li a {
+}
+.gallery ul li a:hover {
+ opacity: 0.5;
+}
+.gallery ul li a img {
+}

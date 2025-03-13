@@ -1,0 +1,337 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+html,
+body {
+ font-size: 16px;
+ color: #333;
+ background-color: #fff;
+}
+ul,
+li {
+ list-style: none;
+}
+a {
+ display: block;
+ text-decoration: none;
+ color: #333;
+}
+img {
+ border: 0;
+ vertical-align: middle;
+}
+
+.wrap {
+ width: 1200px;
+ margin: 0 auto;
+}
+
+.header {
+ position: relative;
+ width: 100%;
+ height: 100px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.logo {
+ position: relative;
+ width: 20%;
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: #eee;
+}
+.logo span {
+ display: flex;
+ width: 200px;
+ height: 40px;
+ justify-content: center;
+ align-items: center;
+ color: #fff;
+ font-weight: bold;
+ font-size: 24px;
+ text-shadow: 2px 2px 2px #333;
+ background-color: #bb00ff;
+}
+.logo:hover {
+ opacity: 0.5;
+}
+
+.menu {
+ position: relative;
+ width: 80%;
+ height: 100%;
+ padding-right: 40px;
+ display: flex;
+ justify-content: flex-end;
+ align-items: flex-end;
+ background-color: #e49bff;
+}
+.navi {
+ position: relative;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.navi > li {
+ position: relative;
+}
+.navi > li > a {
+ width: 150px;
+ line-height: 40px;
+ background-color: #eee;
+ text-align: center;
+ font-size: 20px;
+ font-weight: bold;
+}
+.navi > li:hover > a {
+ background-color: #bb00ff;
+ color: #fff;
+}
+
+.submenu {
+ position: absolute;
+ z-index: 2;
+ display: none;
+}
+.submenu li {
+}
+.submenu a {
+ width: 150px;
+ line-height: 40px;
+ text-align: center;
+}
+.submenu li:hover a {
+ background-color: #e49bff;
+}
+.submenu-bg {
+ position: absolute;
+ top: 100px;
+ width: 100%;
+ height: 150px;
+ background-color: #ddd;
+ z-index: 1;
+ display: none;
+}
+
+.img-slide {
+ position: relative;
+ width: 100%;
+ height: 300px;
+}
+.img-slide a {
+ position: absolute;
+}
+.img-slide img {
+}
+.img-slide span {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ background-color: rgba(0, 0, 0, 0.5);
+ color: #fff;
+ padding: 10px 20px;
+ font-size: 20px;
+}
+
+.contents {
+ position: relative;
+ width: 100%;
+ height: 200px;
+ background-color: #f5f5f5;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 5px;
+}
+
+.notice {
+ position: relative;
+ width: 100%;
+ height: 100%;
+ padding: 5px;
+}
+.notice > a {
+ width: 100px;
+ line-height: 40px;
+ text-align: center;
+ background-color: #ccc;
+ font-weight: bold;
+}
+.notice ul {
+ position: relative;
+ width: 100%;
+}
+.notice li {
+}
+.notice li a {
+ display: flex;
+ width: 100%;
+ line-height: 30px;
+ justify-content: space-between;
+ align-items: center;
+}
+.notice li span {
+}
+.notice li:nth-child(even) a {
+ background-color: #ccc;
+}
+.notice li:hover a {
+ font-weight: bold;
+}
+
+.gallery {
+ position: relative;
+ width: 100%;
+ height: 100%;
+}
+.gallery > a {
+ width: 100px;
+ line-height: 40px;
+ text-align: center;
+ background-color: #ccc;
+ font-weight: bold;
+}
+.gallery ul {
+ position: relative;
+ width: 100%;
+ display: flex;
+ padding: 5px;
+ justify-content: space-around;
+ align-items: center;
+ margin-top: 30px;
+}
+.gallery li {
+}
+.gallery li a {
+}
+.gallery li img {
+}
+.gallery li:hover a {
+ opacity: 0.5;
+}
+
+.shortcut {
+ position: relative;
+ width: 100%;
+ height: 100%;
+}
+.shortcut a {
+ width: 100%;
+ height: 100%;
+}
+.shortcut img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+.shortcut span {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ background-color: rgba(0, 0, 0, 0.5);
+ font-size: 20px;
+ color: #fff;
+ padding: 10px 20px;
+}
+.shortcut:hover a {
+ opacity: 0.5;
+}
+
+.footer {
+ position: relative;
+ width: 100%;
+ height: 100px;
+ background-color: #ddd;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.footmenu {
+ position: relative;
+ width: 80%;
+ height: 100%;
+}
+
+.btmenu {
+ position: relative;
+ width: 100%;
+ height: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 20px;
+}
+.btmenu li {
+}
+.btmenu a {
+}
+.btmenu a:hover {
+ font-weight: bold;
+}
+
+.copy {
+ position: relative;
+ width: 100%;
+ height: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.familysite {
+ position: relative;
+ width: 20%;
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.familysite select {
+}
+.familysite option {
+}
+
+#modal {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(0, 0, 0, 0.7);
+ z-index: 4;
+ display: none;
+}
+#modal.active {
+ display: block;
+}
+.modal-inner {
+ position: fixed;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ background-color: #fff;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ gap: 20px;
+ padding: 20px;
+ width: 400px;
+}
+.modal-title {
+}
+.modal-body {
+}
+.modal-btn {
+ cursor: pointer;
+}
+.modal-btn:hover {
+ font-weight: bold;
+}

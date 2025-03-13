@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+:root {
+ /* primary color */
+ --primary-color: #1b3b86;
+ --primary-color-100: #dbe4f8;
+ --primary-color-200: #b1c3ef;
+ --primary-color-300: #86a3e7;
+ --primary-color-400: #5c83de;
+ --primary-color-500: #3162d6;
+ --primary-color-600: #244eb0;
+ --primary-color-700: #12285c;
+ --primary-color-800: #0a1631;
+ --primary-color-900: #010307;
+
+ /* gray scale */
+ --gray-g-0: #f5f5f5;
+ --gray-g-100: #dbdbdb;
+ --gray-g-200: #c2c2c2;
+ --gray-g-300: #a8a8a8;
+ --gray-g-400: #8f8f8f;
+ --gray-g-500: #757575;
+ --gray-g-600: #5c5c5c;
+ --gray-g-700: #424242;
+ --gray-g-800: #292929;
+ --gray-g-900: #0f0f0f;
+
+ /* font */
+ --font-famlily: "Noto Sans KR", sans-serif;
+ --font-size-h1: 48px;
+ --font-size-h2: 40px;
+ --font-size-h3: 33px;
+ --font-size-h4: 28px;
+ --font-size-main: 23px;
+ --font-size-sub: 19px;
+ --font-size-large: 16px;
+ --font-size-medium: 13px;
+ --font-size-small: 11px;
+}

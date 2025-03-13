@@ -1,0 +1,336 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+.wrap {
+  width: 1000px;
+  height: calc(350px + 200px + 100px);
+  display: flex;
+}
+
+.header {
+  position: relative;
+  width: 20%;
+  height: 100%;
+}
+.logo {
+  width: 100%;
+  padding: 40px 0;
+}
+.logo span {
+  display: block;
+  width: 100%;
+  background-color: #44bb27;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 40px;
+}
+.logo:hover {
+  opacity: 0.5;
+}
+
+.menu {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  z-index: 1;
+}
+.navi {
+}
+.navi > li {
+}
+.navi > li > a {
+  width: 150px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #ddd;
+  font-size: 20px;
+  font-weight: bold;
+}
+.navi > li:hover > a {
+  background-color: #44bb27;
+}
+.submenu {
+  position: absolute;
+  top: 20px;
+  left: 170px;
+  display: none;
+}
+.submenu li {
+}
+.submenu li a {
+  width: 150px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: #f5f5f5;
+}
+.submenu-bg {
+  position: absolute;
+  top: 0;
+  left: 170px;
+  width: 150px;
+  height: 300px;
+  background-color: #333;
+  opacity: 0.7;
+  display: none;
+}
+.submenu li:hover a {
+  background-color: #45bb2780;
+}
+
+.bodywrap {
+  position: relative;
+  width: 80%;
+  height: 100%;
+}
+
+.img-slide {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+.slide-list {
+  width: 300%;
+  height: 100%;
+  display: flex;
+}
+.slide-list li {
+  position: relative;
+}
+.slide-list li a {
+}
+.slide-list img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.slide-list span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 24px;
+  padding: 10px 20px;
+}
+
+.contents {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: flex;
+}
+
+.notice {
+  width: 33.333%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px;
+}
+.notice > a {
+  width: 100px;
+  text-align: center;
+  line-height: 40px;
+  background-color: #ccc;
+  font-weight: bold;
+}
+.notice ul {
+}
+.notice li {
+}
+.notice ul a {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 30px;
+  padding: 0 10px;
+}
+.notice ul li:nth-child(even) a {
+  background-color: #f5f5f5;
+}
+.notice span {
+}
+.notice li:hover a {
+  font-weight: bold;
+}
+
+.gallery {
+  width: 33.333%;
+  height: 100%;
+  background-color: #f5f5f5;
+  padding: 5px;
+}
+.gallery > a {
+  width: 100px;
+  text-align: center;
+  line-height: 40px;
+  background-color: #ccc;
+  font-weight: bold;
+}
+.gallery ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.gallery li {
+}
+.gallery li a {
+}
+.gallery img {
+}
+.gallery li:hover a {
+  opacity: 0.5;
+}
+
+.banner {
+  position: relative;
+  width: 33.333%;
+  height: 100%;
+}
+.banner a {
+}
+.banner img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.banner span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  color: #fff;
+}
+.banner:hover {
+  opacity: 0.5;
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+.btlogo {
+  position: relative;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.btlogo span {
+  display: block;
+  width: 100%;
+  background-color: #777;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 40px;
+}
+.btlogo:hover {
+  opacity: 0.5;
+}
+.btmenu {
+  width: 80%;
+  height: 100%;
+  background-color: #20571336;
+}
+.footmenu {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footmenu a {
+  width: 100px;
+  border-right: 1px solid #333;
+  text-align: center;
+}
+.footmenu a:last-child {
+  border: none;
+}
+.footmenu a:hover {
+  font-weight: bold;
+}
+.copy {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  display: none;
+}
+#modal.active {
+  display: block;
+}
+.modal-inner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+}
+.modal-title {
+}
+.modal-body {
+  word-break: break-all;
+}
+.modal-btn {
+  cursor: pointer;
+}
+.modal-btn:hover {
+  font-weight: bold;
+}

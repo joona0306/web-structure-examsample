@@ -1,0 +1,19 @@
+.shortcut {
+ position: absolute;
+ left: 50%;
+ transform: translate(-50%, -112px);
+ z-index: 1;
+}
+.shortcut ul {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: var(--font-size-large) var(--font-size-h1);
+ background-color: rgba(245, 245, 245, 0.7);
+}
+.shortcut li {
+}
+.shortcut a {
+}
+.shortcut img {
+}

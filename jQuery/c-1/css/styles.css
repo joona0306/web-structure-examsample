@@ -1,0 +1,274 @@
+@charset "utf-8";
+
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  outline-style: none;
+  color: #333;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  background-color: #fff;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+.wrap {
+  width: 1000px;
+  display: flex;
+}
+
+/* header */
+header {
+  position: relative;
+  width: 20%;
+  height: 650px;
+}
+.header-inner {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+/* logo */
+.logo {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.logo a {
+}
+.logo img {
+}
+/* menu */
+.menu {
+  position: relative;
+  width: 100%;
+  padding: 0 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.menu nav {
+}
+.navi {
+}
+.navi > li {
+  position: relative;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.navi > li > a {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+}
+.navi > li > a:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #333;
+}
+
+.submenu {
+  position: relative;
+  width: 100%;
+  display: none;
+  border: 1px solid #333;
+  background-color: #fff;
+}
+.submenu > li > a {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+}
+.submenu > li > a:hover {
+  background-color: rgb(119, 218, 188);
+  color: #fff;
+}
+
+.bodywrap {
+  position: relative;
+  width: 80%;
+}
+
+/* main */
+main {
+  position: relative;
+  width: 100%;
+}
+.main-inner {
+  position: relative;
+  width: 100%;
+}
+/* slide */
+.slide {
+  position: relative;
+  width: 100%;
+  height: 350px;
+}
+.slide > a {
+  position: absolute;
+  display: block;
+}
+.slide span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+/* contents */
+.contents {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.tab {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  background-color: rgba(119, 218, 188, 0.5);
+}
+.tab-title {
+  position: relative;
+  display: flex;
+}
+.tab-title li {
+  position: relative;
+  width: 100px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+}
+.tab-title li > a:hover {
+  background-color: #ccc;
+}
+.tab-title li.active > a {
+  background-color: #fff;
+}
+.tab-body {
+  position: relative;
+  font-size: 15px;
+}
+.notice {
+  position: absolute;
+  width: 100%;
+  padding: 20px 0;
+}
+.notice li {
+  position: relative;
+  width: 100%;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.notice li a {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 30px;
+}
+.notice li:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.notice li:hover {
+  font-weight: bold;
+}
+.gallery {
+  position: absolute;
+  display: none;
+  width: 100%;
+  padding: 20px 0;
+}
+.gallery ul {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.gallery img {
+  width: 100px;
+}
+
+.banner {
+}
+.banner a {
+}
+.banner img {
+}
+
+.shortcut {
+}
+.shortcut a {
+}
+.shortcut img {
+}
+
+/* modal */
+#modal {
+}
+#modal.active {
+}
+.modal-inner {
+}
+.modal-title {
+}
+.modal-body {
+}
+.modal-btn {
+}
+
+/* footer */
+footer {
+  position: relative;
+}
+.footer-inner {
+}
+.btlogo {
+}
+.btlogo a {
+}
+.btlogo img {
+}
+
+.btmenu-copy {
+}
+.btmenu {
+}
+.btmenu select {
+}
+.copy {
+}

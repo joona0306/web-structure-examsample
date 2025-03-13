@@ -1,0 +1,325 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-size: 16px;
+  background: #fff;
+  color: #666;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: #666;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+.wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+.inner {
+  width: 1340px;
+  margin: 0 auto;
+}
+
+/* header */
+.header {
+  position: relative;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+.logo {
+  width: 15%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+  background: url("https://picsum.photos/200/100") no-repeat center;
+  background-size: cover;
+}
+.logo:hover {
+  opacity: 0.5;
+}
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  /* background: rgba(0, 0, 0, 0.1); */
+  padding: 0 20px;
+  z-index: 1;
+}
+.navi {
+  display: flex;
+}
+.navi > li {
+}
+.navi > li > a {
+  width: 150px;
+  line-height: 50px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.1);
+}
+.navi > li:hover > a {
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.submenu {
+  position: absolute;
+  top: 100px;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+.submenu li {
+}
+.submenu li a {
+  width: 150px;
+  line-height: 30px;
+  color: #000;
+  text-align: center;
+  background-color: #999;
+  opacity: 0.8;
+}
+.navi > li:hover .submenu {
+  height: 120px;
+}
+.submenu li a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* main */
+.main {
+}
+/* image slide */
+.img-slide {
+  position: relative;
+  width: 100%;
+  height: 350px;
+}
+.slide-list {
+  width: 100%;
+  height: 350px;
+}
+.slide-list li {
+  position: absolute;
+}
+.slide-list a {
+}
+.slide-list img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.slide-list span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 30px;
+  font-size: 20px;
+  color: #333;
+  opacity: 0.7;
+  background-color: #999;
+}
+
+.shortcut {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #999;
+  opacity: 0.8;
+}
+.shortcut a {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.shortcut span {
+  color: #000;
+}
+.shortcut a:hover {
+  opacity: 0.5;
+}
+
+.banner {
+  position: relative;
+  height: 150px;
+}
+.banner a {
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.banner span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  background-color: #999;
+  color: #333;
+}
+.banner a:hover {
+  opacity: 0.5;
+}
+
+.tabmenu {
+  position: relative;
+  padding: 20px 0;
+  height: 240px;
+}
+.tabmenu > li {
+  position: absolute;
+}
+.tabmenu > li > a {
+  position: absolute;
+  width: 100px;
+  line-height: 40px;
+  text-align: center;
+  color: #000;
+}
+.tabmenu > li:last-child > a {
+  left: 100px;
+}
+.tabmenu > li > div {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 900px;
+  height: 160px;
+  display: none;
+}
+.tabmenu > li > a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.tabmenu > li.active > a {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.tabmenu > li.active > div {
+  display: block;
+}
+
+.notice a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 40px;
+  padding: 0 5px;
+}
+.notice li:nth-child(even) a {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.notice li:hover a {
+  font-weight: bold;
+}
+
+.gallery ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.gallery a:hover {
+  opacity: 0.5;
+}
+
+.footer {
+  position: relative;
+  height: 120px;
+  display: flex;
+}
+.btlogo {
+  width: 15%;
+}
+.btmenu {
+  width: 85%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.footermenu {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  align-items: center;
+  padding-left: 20px;
+}
+.footermenu li {
+}
+.footermenu a {
+  padding: 0 10px;
+  border-right: 1px solid #333;
+}
+.footermenu a:hover {
+  font-weight: bold;
+}
+.footermenu li:last-child a {
+  border: none;
+}
+.copy {
+  width: 100%;
+  height: 50%;
+  padding-left: 30px;
+}
+
+#modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  display: none;
+}
+#modal.active {
+  display: block;
+}
+.modal-inner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 500px;
+  background-color: #fff;
+}
+.modal-title {
+}
+.modal-body {
+}
+.modal-btn {
+  cursor: pointer;
+}
+.modal-btn:hover {
+  font-weight: bold;
+}

@@ -1,0 +1,322 @@
+@charset "utf-8";
+
+/* css 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  outline-style: none;
+  color: #333;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  background-color: #fff;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+.wrap {
+  /* position: relative; */
+  width: 100%;
+}
+
+/* header */
+header {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background-color: #f9e9e6;
+}
+.header-inner {
+  position: relative;
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.logo {
+  position: relative;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  height: 40px;
+  z-index: 3;
+}
+.navi {
+  position: relative;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navi > li {
+  position: relative;
+  width: 25%;
+  height: 40px;
+  background-color: #333;
+  line-height: 40px;
+  text-align: center;
+}
+.navi > li > a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+.navi > li > a:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+}
+.submenu {
+  position: relative;
+  display: none;
+}
+.submenu > li > a {
+  color: #fff;
+}
+.submenu > li > a:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+}
+.submenu-bg {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  height: 180px;
+  display: none;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* main */
+main {
+  position: relative;
+}
+.main-inner {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+.slide {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+.slide-list {
+  position: relative;
+  width: 300%;
+  height: 100%;
+  display: flex;
+}
+.slide-list li {
+  position: relative;
+  display: flex;
+  flex: 1;
+}
+.slide-list img {
+  width: 1200px;
+  height: 100%;
+  object-fit: cover;
+}
+.slide-list span {
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+}
+
+.contents {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9e9e6;
+}
+.notice {
+  position: relative;
+  width: 400px;
+  height: 100%;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 10px;
+}
+.title {
+  position: relative;
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #333;
+  font-size: 18px;
+  font-weight: bold;
+}
+.notice ul {
+  position: relative;
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+.notice li:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.notice li a {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.notice li a:hover {
+  font-weight: bold;
+}
+.gallery {
+  position: relative;
+  width: 400px;
+  height: 100%;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 10px;
+}
+.gallery-img {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.shortcut {
+  position: relative;
+  width: 400px;
+  height: 100%;
+  padding: 10px;
+}
+.shortcut a {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.shortcut img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 푸터 */
+footer {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background-color: #ebedf0;
+}
+.footer-inner {
+  position: relative;
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.copy {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  font-size: 16px;
+  line-height: 100px;
+}
+.site {
+  position: relative;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.sns {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sns img {
+  width: 40px;
+  height: 40px;
+}
+.familysite select {
+  position: relative;
+  width: 100%;
+  height: 20px;
+}
+
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.6);
+}
+#modal.active {
+  display: block;
+}
+.modal-inner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  z-index: 4;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+}
+.modal-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.modal-body {
+  font-size: 14px;
+  line-height: 1.75;
+}
+.btn {
+  position: relative;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}

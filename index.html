@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>웹 UI 구조 파악하기</title>
+ </head>
+ <body>
+  <h1>웹 UI 구조 파악하기</h1>
+  <nav>
+   <ul>
+    <li>
+     <span>Vanilla JS</span>
+     <ul class="submenu">
+      <li>
+       <a href="vanilaJs/a-1/index.html">A-1 유형</a>
+      </li>
+      <li>
+       <a href="vanilaJs/a-3/index.html">A-3 유형</a>
+      </li>
+      <li>
+       <a href="vanilaJs/b-1/index.html">B-1 유형</a>
+      </li>
+      <li>
+       <a href="vanilaJs/c-1/index.html">C-1 유형</a>
+      </li>
+      <li>
+       <a href="vanilaJs/d-3/index.html">D-3 유형</a>
+      </li>
+      <li>
+       <a href="vanilaJs/e-2/index.html">E-2 유형</a>
+      </li>
+      <li>
+       <a href="vanilaJs/f-3/index.html">F-3 유형</a>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <span>jQuery</span>
+     <ul class="submenu">
+      <li>
+       <a href="jQuery/a-1/index.html">A-1 유형</a>
+      </li>
+      <li>
+       <a href="jQuery/a-2/index.html">A-2 유형</a>
+      </li>
+      <li>
+       <a href="jQuery/a-3/index.html">A-3 유형</a>
+      </li>
+      <li>
+       <a href="jQuery/a-4/index.html">A-4 유형</a>
+      </li>
+      <li>
+       <a href="jQuery/b-1/index.html">B-1 유형</a>
+      </li>
+      <li>
+       <a href="jQuery/b-2/index.html">B-2 유형</a>
+      </li>
+      <li>
+       <a href="jQuery/b-3/index.html">B-3 유형</a>
+      </li>
+      <li>
+       <a href="jQuery/b-4/index.html">B-4 유형</a>
+      </li>
+
+      <li>
+       <a href="jQuery/c-1/index.html">C-1 유형</a>
+      </li>
+      <li>
+       <a href="jQuery/c-2/index.html">C-2 유형</a>
+      </li>
+      <li>
+       <a href="jQuery/c-3/index.html">C-3 유형</a>
+      </li>
+      <li>
+       <a href="jQuery/c-4/index.html">C-4 유형</a>
+      </li>
+      <li>
+       <a href="jQuery/d-1/index.html">D-1 유형</a>
+      </li>
+      <li>
+       <a href="jQuery/d-2/index.html">D-2 유형</a>
+      </li>
+      <li>
+       <a href="jQuery/d-3/index.html">D-3 유형</a>
+      </li>
+      <li>
+       <a href="jQuery/d-4/index.html">D-4 유형</a>
+      </li>
+      <li>
+       <a href="jQuery/e-3/index.html">E-3 유형</a>
+      </li>
+      <li>
+       <a href="jQuery/e-4/index.html">E-4 유형</a>
+      </li>
+      <li>
+       <a href="jQuery/f-1/index.html">F-1 유형</a>
+      </li>
+      <li>
+       <a href="jQuery/f-2/index.html">F-2 유형</a>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </nav>
+
+  <div
+   id="modal"
+   style="
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #eee;
+    border-radius: 8px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+    display: none;
+   "
+  >
+   <p style="line-height: 1.5; margin-bottom: 14px">
+    웹 UI 구조 파악 강의용으로 제작된 실습예제입니다. <br />
+    스터디 목적으로 이용하는 것을 권장합니다. <br />
+    문제 발생 시 즉각 아래로 연락 주시면 즉각 조치하겠습니다.
+    <br />
+    <a href="mailto:dev.joona0306@gmail.com">Email</a>
+   </p>
+   <div class="modal-btn" style="cursor: pointer">닫기</div>
+  </div>
+
+  <!-- js -->
+  <script>
+   const modal = document.querySelector("#modal");
+   const modalBtn = document.querySelector(".modal-btn");
+   window.addEventListener("load", () => {
+    if (!sessionStorage.getItem("modalShown")) {
+     // sessionStorage에 'modalShown' 플래그가 없으면 모달을 띄움
+     modal.style.display = "block";
+     sessionStorage.setItem("modalShown", "true");
+    }
+   });
+   modalBtn.addEventListener("click", () => {
+    // 모달이 한 번 보여졌으므로 플래그 저장
+    modal.style.display = "none";
+   });
+  </script>
+ </body>
+</html>

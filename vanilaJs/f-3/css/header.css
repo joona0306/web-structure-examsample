@@ -1,0 +1,102 @@
+.header {
+}
+.header.inner {
+ position: relative;
+ height: 100px;
+ display: flex;
+ justify-content: space-between;
+ /* border-bottom: 1px solid var(--g200); */
+ background-color: #fff;
+}
+
+.logo {
+ position: relative;
+ width: 20%;
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.logo span {
+ width: 200px;
+ line-height: 60px;
+ text-align: center;
+ font-size: 24px;
+ font-weight: bold;
+ text-shadow: 0px 0px 5px var(--g400);
+ color: #fff;
+ background-color: var(--primary);
+ border-radius: 10px;
+ box-shadow: 0px 0px 10px var(--g400);
+}
+.logo:hover span {
+ background-color: var(--secondary);
+}
+
+.menu {
+ position: relative;
+ width: 80%;
+ height: 100%;
+ display: flex;
+ justify-content: flex-end;
+ align-items: flex-end;
+ padding-right: 20px;
+ padding-bottom: 20px;
+}
+.navi {
+ position: relative;
+ display: flex;
+ align-items: center;
+ /* gap: 20px; */
+}
+.navi > li {
+ position: relative;
+ padding: 0 10px;
+}
+.navi > li > a.btn-wrap {
+ text-align: center;
+ line-height: 40px;
+ font-size: 20px;
+}
+.navi > li:hover > a.btn-wrap {
+ background-color: var(--p600);
+ color: #333;
+ font-weight: bold;
+}
+
+.submenu {
+ position: absolute;
+ top: 40px;
+ height: 0px;
+ overflow: hidden;
+ padding-top: 55px;
+ z-index: 3;
+}
+.submenu li {
+ position: relative;
+ padding-right: 20px;
+}
+.submenu li a {
+ width: 150px;
+ line-height: 30px;
+ text-align: center;
+}
+.submenu li a:hover {
+ background-color: var(--secondary);
+ border-radius: 5px;
+ color: #333;
+}
+.submenu-bg {
+ position: absolute;
+ top: 20px;
+ left: 50%;
+ width: 90%;
+ /* height: 150px; */
+ height: 0px;
+ background-color: var(--g100);
+ border-radius: 20px;
+ transform: translateX(-50%);
+ z-index: 2;
+ box-shadow: 0 0 10px var(--g400);
+ opacity: 0.7;
+}

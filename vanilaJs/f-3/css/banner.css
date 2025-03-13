@@ -1,0 +1,48 @@
+.banner {
+}
+.banner.inner {
+ position: relative;
+ height: 200px;
+ background-color: var(--g300);
+ background: url("https://picsum.photos/1340/200") no-repeat center;
+ border-radius: 0 0 30px 30px;
+ margin-bottom: 20px;
+ box-shadow: 0 4px 10px var(--g400);
+ display: flex;
+ justify-content: space-between;
+ align-items: stretch;
+}
+
+.banner .text-wrap {
+ position: relative;
+ width: 80%;
+ display: flex;
+ flex-direction: column;
+ /* align-items: center; */
+ justify-content: center;
+ padding-left: 40px;
+}
+.banner .text-wrap h3 {
+ color: var(--grayscale);
+ margin-bottom: 10px;
+}
+.banner .text-wrap p {
+ color: var(--g200);
+}
+.banner a {
+ position: relative;
+ width: 20%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.banner a i {
+ font-size: 52px;
+ color: var(--grayscale);
+ text-shadow: 0 2px 10px #000;
+ transition: all 0.2s;
+}
+.banner a:hover i {
+ color: var(--p400);
+ text-shadow: 0 6px 15px #000;
+}

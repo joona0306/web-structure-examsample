@@ -1,0 +1,15 @@
+.img-slide {
+ position: relative;
+ width: 100%;
+ height: 350px;
+}
+.img-slide a {
+ position: absolute;
+ width: 100%;
+ height: 350px;
+}
+.img-slide img {
+ width: 100%;
+ height: 350px;
+ object-fit: cover;
+}

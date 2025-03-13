@@ -1,0 +1,395 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  background-color: #fff;
+  font-size: 16px;
+  color: #333;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+.wrap {
+}
+.bodywrap {
+  position: relative;
+  width: 100%;
+  height: calc(400px + 200px + 250px);
+  display: flex;
+}
+.header {
+  width: 200px;
+  height: 100%;
+}
+.logo {
+  position: relative;
+  width: 200px;
+  height: 150px;
+}
+.logo img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+.logo span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  text-align: center;
+  line-height: 40px;
+  background-color: rgba(154, 222, 58, 0.736);
+  font-weight: bold;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+.logo:hover {
+  opacity: 0.5;
+}
+
+.menu {
+  position: relative;
+  width: 100%;
+  /* background-color: pink; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 40px;
+  z-index: 1;
+}
+.navi {
+}
+.navi > li {
+  position: relative;
+  display: flex;
+}
+.navi > li > a {
+  width: 160px;
+  line-height: 50px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.navi > li:hover > a {
+  background-color: rgba(154, 222, 58, 0.736);
+  font-weight: bold;
+}
+
+.submenu {
+  position: absolute;
+  top: 0;
+  left: 160px;
+  display: flex;
+  align-items: center;
+}
+.submenu li {
+  display: none;
+}
+.submenu a {
+  width: 160px;
+  line-height: 50px;
+  text-align: center;
+}
+.submenu a:hover {
+  background-color: rgba(195, 255, 110, 0.5);
+  font-weight: bold;
+}
+.submenu-bg {
+  position: absolute;
+  width: 100vw;
+  height: 200px;
+  top: 40px;
+  left: 180px;
+  background-color: #ddd;
+  opacity: 0.5;
+  display: none;
+}
+
+.sign {
+  position: relative;
+  display: flex;
+  margin-top: 20px;
+}
+.sign li {
+}
+.sign a {
+  width: 80px;
+  text-align: center;
+  border-right: 1px solid #333;
+}
+.sign li:last-child a {
+  border: none;
+}
+.sign li:hover a {
+  font-weight: bold;
+}
+
+.contents {
+  position: relative;
+  width: 100%;
+}
+
+.img-slide {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+.img-slide a {
+  position: absolute;
+  width: 100%;
+}
+.img-slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.img-slide span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 20px;
+}
+
+.shortcut {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  background-color: #ccc;
+}
+.shortcut a:hover {
+  opacity: 0.6;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+.banner a {
+}
+.banner img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.banner span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 40px;
+  color: #fff;
+  font-size: 20px;
+}
+.banner a:hover {
+  opacity: 0.5;
+}
+
+.tabmenu {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+.tabmenu > ul {
+  position: relative;
+}
+.tabmenu > ul > li {
+  position: relative;
+}
+.tabmenu > ul > li > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  line-height: 40px;
+  background-color: #ccc;
+  text-align: center;
+  font-weight: bold;
+}
+.tabmenu > ul > li:last-child > a {
+  left: 150px;
+}
+.tabmenu > ul > li:hover > a {
+  background-color: #eee;
+}
+.tabmenu > ul > li.active > a {
+  background-color: #f5f5f5;
+}
+.tabmenu > ul > li > div {
+  position: absolute;
+  width: 100%;
+  top: 40px;
+  left: 0;
+  padding: 20px;
+  background-color: #ddd;
+  display: none;
+}
+.tabmenu > ul > li.active > div {
+  display: block;
+}
+
+.notice {
+}
+.notice ul {
+}
+.notice li {
+}
+.notice a {
+  width: 100%;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.notice span {
+  padding: 0 40px;
+}
+.notice li:nth-child(even) a {
+  background-color: #ccc;
+}
+.notice a:hover {
+  font-weight: bold;
+}
+
+.gallery {
+}
+.gallery ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.gallery li {
+}
+.gallery a {
+}
+.gallery img {
+}
+.gallery a:hover {
+  opacity: 0.5;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+}
+.btlogo {
+  position: relative;
+  width: 200px;
+  height: 100%;
+}
+.btlogo:hover {
+  opacity: 0.5;
+}
+.btlogo span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  text-align: center;
+  line-height: 40px;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+.btmenu {
+  position: relative;
+}
+.btmenu ul {
+  display: flex;
+  width: calc(100vw - 200px);
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.btmenu li {
+}
+.btmenu li a {
+  width: 150px;
+  text-align: center;
+  border-right: 1px solid #333;
+}
+.btmenu li:last-child a {
+  border: none;
+}
+.btmenu li a:hover {
+  font-weight: bold;
+}
+.copy {
+  width: calc(100vw - 200px);
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+#modal.active {
+  display: block;
+}
+.modal-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 500px;
+}
+.modal-title {
+}
+.modal-body {
+}
+.modal-btn {
+  cursor: pointer;
+}
+.modal-btn:hover {
+  font-weight: bold;
+}
