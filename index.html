@@ -118,7 +118,7 @@
     display: none;
    "
   >
-   <p style="line-height: 1.5; margin-bottom: 14px">
+   <p style="line-height: 1.8; margin-bottom: 14px">
     웹 UI 구조 파악 강의용으로 제작된 실습예제입니다. <br />
     스터디 목적으로 이용하는 것을 권장합니다. <br />
     문제 발생 시 즉각 아래로 연락 주시면 즉각 조치하겠습니다.
@@ -132,7 +132,7 @@
   <script>
    const modal = document.querySelector("#modal");
    const modalBtn = document.querySelector(".modal-btn");
-   window.addEventListener("load", () => {
+   window.addEventListener("pageshow", () => {
     if (!sessionStorage.getItem("modalShown")) {
      // sessionStorage에 'modalShown' 플래그가 없으면 모달을 띄움
      modal.style.display = "block";
